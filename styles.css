@@ -1,14 +1,66 @@
+body {
+  margin: 0px;
+}
+
 #header-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  padding: 10px;
+  background: beige;
+  height: 70px;
+  align-items: center;
+}
+
+#title-container {
+  flex-grow: 1;
+  padding-left: 65px;
+}
+
+#title {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px
 }
 
 .nav-button {
   margin-right: 5px;
-  width: 80px;
+  width: 120px;
+  height: 30px;
+  background-color: beige;
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  border-radius: 12px;
+}
+
+.nav-button:hover {
+  background-color: #e9e9b5;
 }
 
 .button-clicked {
-  background: red;
+  border-radius: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 
+#A8B8AE
+#C8C6AD
+#98503F
+#F2AFA0
+#FDDDD1 
+*/
+
+i {
+  color: #C8C6AD;
+  margin-right: 10px;
 }
