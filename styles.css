@@ -65,8 +65,8 @@ a {
 */
 
 i {
-  color: #C8C6AD;
-  margin-right: 10px;
+  color: #575540;
+  margin-right: 6px;
 }
 
 #home-description {
@@ -101,4 +101,36 @@ i {
 
 #nav-container {
   padding-right: 65px;
+}
+
+.contact-heading {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.contact-description {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 350;
+  line-height: 22px;
+  /* margin: 0 200 0 200; */
+  padding: 0 150 0 150;
+  margin-bottom: 20px;
+}
+
+#contact {
+  flex-grow: 1;
+  height: 40vh;
+  background-color: #68736B;
+  color: #EEE7D2;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  padding: 60 100 60 100;
 }
