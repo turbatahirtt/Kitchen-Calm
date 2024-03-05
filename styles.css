@@ -64,9 +64,13 @@ a {
 #FDDDD1 
 */
 
-i {
+.nav-icon {
   color: #575540;
   margin-right: 6px;
+}
+
+.sm-icon {
+  margin-right: 8px;
 }
 
 #home-description {
