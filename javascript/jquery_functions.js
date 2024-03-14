@@ -1,11 +1,17 @@
 jQuery(function() {
 
-  var homeButtonId = "#home-button";
-  var tipsButtonId = "#tips-button";
-  var contactButtonId = "#contact-button";
+  $('input:checkbox').change(function() {
+    if ($(this).is(':checked')) {
+      let parent = $(this).parent();
+      console.log(parent.children()[1]);
+      parent.children().eq(1).css('text-decoration', 'line-through');
+    }
 
-  var homeDivId = "#home";
-  var tipsDivId = "#tips";
-  var contactDivId = "#contact";
+    if ($(this).is(':not(:checked)')) {
+      let parent = $(this).parent();
+      console.log(parent.children()[1]);
+      parent.children().eq(1).css('text-decoration', '');
+    }
+  })
 
 })

@@ -215,3 +215,33 @@ a {
   justify-content: flex-start;
   align-items: center;
 }
+
+li {
+  margin-bottom: 10px;
+}
+
+#ingredients {
+  list-style: none;
+}
+
+#video-player-container {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  align-items: center;
+}
+
+#video {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#video img {
+  object-fit: contain;
+    height: 80%;
+    width: 100%;
+}
