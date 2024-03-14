@@ -14,6 +14,10 @@ jQuery(function() {
     }
   })
 
+  $("#recipe-of-the-week-img").click(function() {
+    window.location.href = "html/recipe1.html";
+  })
+
   var currentStep = 0;
   var images = [
     '../Images/Step-1.png',

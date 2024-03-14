@@ -1,8 +1,27 @@
 body {
   margin: 0px;
+  background-color: #68736B;
 }
 
-#header-container {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.body-container {
+  height: 90vh;
+  display: flex;
+}
+
+.header-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -11,17 +30,12 @@ body {
   align-items: center;
 }
 
-#body-container {
-  height: 90vh;
-  display: flex;
-}
-
-#title-container {
+.title-container {
   flex-grow: 1;
   padding-left: 65px;
 }
 
-#title {
+.title {
   font-family: "Josefin Slab", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -51,19 +65,6 @@ body {
   border-radius: 12px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* 
-#A8B8AE
-#C8C6AD
-#98503F
-#F2AFA0
-#FDDDD1 
-*/
-
 .nav-icon {
   color: #575540;
   margin-right: 6px;
@@ -73,38 +74,21 @@ a {
   margin-right: 8px;
 }
 
-#home-description {
-  height: 40vh;
-  background-color: #68736B;
-  color: #EEE7D2;
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 15px;
-  padding: 60 100 60 100;
-}
-
-#mission {
+.heading {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
   font-size: 35px;
 }
 
-#mission-description {
+.description {
   display: flex;
   justify-content: center;
   font-size: 18px;
   text-align: center;
   font-weight: 350;
   line-height: 22px;
-  /* margin: 0 200 0 200; */
   padding: 0 150 0 150;
-}
-
-#nav-container {
-  padding-right: 65px;
 }
 
 .contact-heading {
@@ -121,30 +105,8 @@ a {
   text-align: center;
   font-weight: 350;
   line-height: 22px;
-  /* margin: 0 200 0 200; */
   padding: 0 150 0 150;
   margin-bottom: 20px;
-}
-
-#contact {
-  flex-grow: 1;
-  height: 40vh;
-  background-color: #68736B;
-  color: #EEE7D2;
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 15px;
-  padding: 60 100 60 100;
-}
-
-#recipes {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  flex-grow: 1;
-  background-color: #68736B;
 }
 
 .recipe {
@@ -175,10 +137,8 @@ a {
   cursor: pointer;
 }
 
-.img-style {
-  height: 100%;
-  width: 50%;
-  object-fit: scale-down;
+.nav-container {
+  padding-right: 65px;
 }
 
 .img-header {
@@ -190,7 +150,53 @@ a {
   justify-content: center;
 }
 
-.recipe-container {
+.prev-next {
+  object-fit: cover;
+  width: 100px;
+  cursor: pointer;
+}
+
+#home-description {
+  height: 40vh;
+  background-color: #68736B;
+  color: #EEE7D2;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  padding: 60 100 60 100;
+}
+
+#contact {
+  flex-grow: 1;
+  height: 40vh;
+  background-color: #68736B;
+  color: #EEE7D2;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  padding: 60 100 60 100;
+}
+
+#recipes {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  flex-grow: 1;
+  background-color: #68736B;
+}
+
+#salmon-img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#salmon-recipe-container {
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -204,20 +210,10 @@ a {
   padding-right: 20vw;
 }
 
-#recipe-body {
-  background-color: #68736B;
-  
-}
-
-#salmon-img-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-li {
-  margin-bottom: 10px;
+#salmon-img-style {
+  height: 100%;
+  width: 50%;
+  object-fit: scale-down;
 }
 
 #ingredients {
@@ -253,8 +249,32 @@ li {
   width: 100%;
 }
 
-.prev-next {
-  object-fit: cover;
-  width: 100px;
+#recipe-of-the-week-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#recipe-of-the-week {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+#recipe-of-the-week-img-container {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#recipe-of-the-week-img {
+  object-fit: contain;
+  width: 45%;
   cursor: pointer;
 }
