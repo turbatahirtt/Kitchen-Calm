@@ -175,6 +175,12 @@ a {
   cursor: pointer;
 }
 
+.img-style {
+  height: 100%;
+  width: 50%;
+  object-fit: scale-down;
+}
+
 .img-header {
   margin-bottom: 35px;
 }
@@ -182,4 +188,30 @@ a {
 .img-container {
   display: flex;
   justify-content: center;
+}
+
+.recipe-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  color: #EEE7D2;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  padding-left: 300px;
+  padding-right: 500px;
+}
+
+#recipe-body {
+  background-color: #68736B;
+  
+}
+
+#salmon-img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
