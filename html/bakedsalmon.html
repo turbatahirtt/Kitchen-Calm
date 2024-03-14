@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <script src="../javascript/jquery-3.7.1.js"></script>
+    <script src="../javascript/jquery_functions.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/78252a6fd2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="title-container">
+        <span class="title">Kitchen Calm</span>
+      </div>
+      <div class="nav-container">
+        <button id="home-button" class="nav-button"><a href="../index.html"><i class="fa-solid fa-house nav-icon"></i>HOME</a></button>
+        <button id="recipes-button" class="nav-button"><a href="recipes.html"><i class="fa-solid fa-bowl-food nav-icon"></i>RECIPES</a></button>
+        <button id="tips-button" class="nav-button"><a href="tips.html"><i class="fa-solid fa-seedling nav-icon"></i>TIPS</a></button>
+        <button id="contact-button" class="nav-button"><a href="contact.html"><i class="fa-solid fa-pager nav-icon"></i>CONTACT</a></button>
+      </div>
+    </div>
+    <div id="salmon-recipe-container">
+      <h2>BAKED SALMON WITH GINGER SOY GLAZE</h2>
+      <div id="salmon-img-container">
+        <img id="salmon-img-style" src="../Images/Step-11.png"/>
+      </div>
+      <div>
+        <h3>Ingredients</h3>
+        <ul id="ingredients">
+          <li>
+            <input type="checkbox">
+            <span>2 ½ pounds whole salmon fillet</span>
+          </li>
+          <li>
+            <input type="checkbox">
+            <span>4 TBSP vinegar</span>
+          </li>
+          <li>
+            <input type="checkbox">
+            <span>4 TBSP soy sauce</span>
+          </li>
+          <li>
+            <input type="checkbox">
+            <span>2 TBSP honey</span>
+          </li>
+          <li>
+            <input type="checkbox">
+            <span>2 TBSP sesame oil</span>
+          </li>
+          <li>
+            <input type="checkbox">
+            <span>6 cloves garlic, minced</span>
+          </li>
+          <li>
+            <input type="checkbox">
+            <span>1 TBSP grated ginger</span>
+          </li>
+          <li>
+            <input type="checkbox">
+            <span>¼ tsp freshly ground black pepper</span>
+          </li>
+          <li>
+            <input type="checkbox">
+            <span>1 pinch of salt</span>
+          </li>
+        </ul>
+        <h3>Method</h3>
+        <ol>
+          <li>Cut the salmon filet into 3-4 pieces.</li>
+          <li>Finely grate the ginger.</li>
+          <li>Finely chop the garlic.</li>
+          <li>Add ginger and garlic to a bowl.</li>
+          <li>In the same bowl mix together the vinegar, soy sauce, honey, sesame oil, salt , and black pepper.</li>
+          <li>Coat the salmon with the marinade, cover with plastic wrap and let it chill in the fridge for at least half an hour.</li>
+          <li>Preheat oven to 350F, with rack on middle position</li>
+          <li>Transfer salmon to a baking sheet. Evenly distribute marinade over salmon. Bake for 10 minutes (if your salmon is extra thick, or very cold, you may bake an additional 3-5 minutes.)</li>
+          <li>Enjoy!</li>
+        </ol>
+        <div id="video-player-container">
+          <div>
+            <img id="prev-button" class="prev-next" src="../Images/Previous-step.jpg.png"/>
+          </div>
+          <div id="video">
+            <img id="video-img" src="../Images/Step-1.png"/>
+            <video hidden id="video-player" autoplay muted>
+              <source id="video-source" src="../Videos/Step 1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div>
+            <img id="next-button" class="prev-next" src="../Images/Next-step.png"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

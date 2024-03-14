@@ -63,6 +63,7 @@ li {
 
 .button-clicked {
   border-radius: 12px;
+  background-color: #e9e9b5;
 }
 
 .nav-icon {
@@ -277,4 +278,22 @@ li {
   object-fit: contain;
   width: 45%;
   cursor: pointer;
+}
+
+#tips-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  color: #EEE7D2;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  padding-left: 25vw;
+  padding-right: 25vw;
+}
+
+#tips-container li {
+  margin-bottom: 30px;
 }

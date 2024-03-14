@@ -15,7 +15,7 @@ jQuery(function() {
   })
 
   $("#recipe-of-the-week-img").click(function() {
-    window.location.href = "html/recipe1.html";
+    window.location.href = "html/bakedsalmon.html";
   })
 
   var currentStep = 0;
