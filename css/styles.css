@@ -160,6 +160,18 @@ li {
   cursor: pointer;
 }
 
+.recipe-header {
+  margin-top: 4vh;
+}
+
+.inline-picture {
+  margin: 20 0 20 0;
+}
+
+.inline-img {
+  width: 50%;
+}
+
 #recipe-container {
   height: 90vh;
   display: flex;
