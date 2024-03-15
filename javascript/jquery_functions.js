@@ -47,10 +47,27 @@ jQuery(function() {
     '../Videos/Step 9.mp4',
     '../Videos/Step 10.mp4',
   ]
+
+  var stepInstructions = [
+    'Cut the salmon filet into 3-4 pieces.',
+    'Finely grate the ginger.',
+    'Finely chop the garlic.',
+    'Add ginger and garlic to a bowl.',
+    'In the same bowl add vinegar, soy sauce, honey, sesame oil.',
+    'In the same bowl add the black pepper.',
+    'In the same bowl add the salt.',
+    'Mix together.',
+    'Coat the salmon with the marinade.',
+    'Cover with plastic wrap and let it chill in the fridge for at least half an hour.',
+    'Bake salmon at 350F for 10 minutes.',
+    'Enjoy!'
+  ]
+  
   $("#prev-button").click(function() {
     if (currentStep === 0) return;
     currentStep = currentStep - 1;
 
+    $("#current-step").html(stepInstructions[currentStep]);
     $("#video-img").attr("hidden", false);
     $("#video-player").attr("hidden", true);
 
@@ -62,6 +79,7 @@ jQuery(function() {
     if (currentStep === 11) return;
     currentStep = currentStep + 1;
 
+    $("#current-step").html(stepInstructions[currentStep]);
     $("#video-img").attr("hidden", false);
     $("#video-player").attr("hidden", true);
 

@@ -255,6 +255,8 @@ li {
   align-items: center;
   display: flex;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #video img {
@@ -318,4 +320,8 @@ li {
 
 #tips-header {
   margin-top: 4vh;
+}
+
+#current-step {
+  margin-bottom: 20px;
 }
